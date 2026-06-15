@@ -13,4 +13,4 @@ end
 
 gem "wdm", "~> 0.2.0", :platforms => [:windows]
 
-gem "jekyll-crypto", "~> 1.1.0"
+gem "jekyll-crypto", "~> 0.1.3"
