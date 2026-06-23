@@ -1,0 +1,28 @@
+---
+title:  Quantum Espresso Tutorial
+date: 2026-06-22 16:30:00 +0800
+categories: [Research]
+tags: [QE, DFT, AIMD]
+---
+
+# Quantum Espresso 使用教程 ——by Silong Quan
+
+## 1 登陆服务器 (如在本地计算可跳过此步)
+- 下载安装[Xshell](https://cdn.netsarang.net/v8/Xshell-latest-p)和[Xftp](https://cdn.netsarang.net/v8/Xftp-latest-p)；
+- 打开 Xshell，点击「新建」，点击「连接」填写主机地址、端口号等信息；再点击「用户身份验证」输入用户名与密码，完成后点击「确定」;
+<img width="1370" height="684" alt="image" src="https://github.com/user-attachments/assets/dc160fc3-88d5-4b9e-9d47-f49cb81cbd21" />
+
+
+- 点击「打开」，选中刚刚新建的连接会话，点击「连接」登录服务器;
+
+- 点击工具栏Xftp图标启动Xftp文件传输工具，窗口左侧为本地文件目录，右侧为服务器文件目录。
+
+## 2 新建工作目录
+登陆服务器后
+```bash
+msmcquan@inspur-NF5468M5:~$ mkdir quansilong
+msmcquan@inspur-NF5468M5:~$ ll
+total 4
+drwxr-xr-x 3 msmcquan quansilong 4096 6月  15 10:39 quansilong/
+```
+## 3 准备队列系统提交脚本
