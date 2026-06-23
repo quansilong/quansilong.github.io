@@ -12,17 +12,22 @@ tags: [QE, DFT, AIMD]
 - 打开 Xshell，点击「新建」，点击「连接」填写主机地址、端口号等信息；再点击「用户身份验证」输入用户名与密码，完成后点击「确定」;
 ![主题](/assets/image/2026-06-22/1.png)
 
-
 - 点击「打开」，选中刚刚新建的连接会话，点击「连接」登录服务器;
+![主题](/assets/image/2026-06-22/2.png)
 
 - 点击工具栏Xftp图标启动Xftp文件传输工具，窗口左侧为本地文件目录，右侧为服务器文件目录。
+![主题](/assets/image/2026-06-22/3.png)
 
 ## 2 新建工作目录
-登陆服务器后
+登陆服务器后，先新建自己的个人文件夹，以后所有的操作和计算在新建的个人文件夹中进行。如我以自己的姓名拼音新建文件夹quansilong/
 ```bash
 msmcquan@inspur-NF5468M5:~$ mkdir quansilong
 msmcquan@inspur-NF5468M5:~$ ll
 total 4
 drwxr-xr-x 3 msmcquan quansilong 4096 6月  15 10:39 quansilong/
+msmcquan@inspur-NF5468M5:~$ cd quansilong/
+msmcquan@inspur-NF5468M5:~/quansilong$ pwd
+/home/msmcquan/quansilong
 ```
+
 ## 3 准备队列系统提交脚本
