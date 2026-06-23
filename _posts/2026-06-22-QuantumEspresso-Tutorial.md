@@ -18,16 +18,24 @@ tags: [QE, DFT, AIMD]
 - 点击工具栏Xftp图标启动Xftp文件传输工具，窗口左侧为本地文件目录，右侧为服务器文件目录。
 ![主题](/assets/image/2026-06-22/3.png)
 
-## 2 新建工作目录
-登陆服务器后，先新建自己的个人文件夹，以后所有的操作和计算在新建的个人文件夹中进行。如我以自己的姓名拼音新建文件夹quansilong/
+## 2 新建个人文件夹和工作目录
+登陆服务器后，先新建自己的个人文件夹，以后所有的操作和计算在新建的个人文件夹中进行，如我以自己的姓名拼音新建个人文件夹「quansilong/」。
 ```bash
 msmcquan@inspur-NF5468M5:~$ mkdir quansilong
 msmcquan@inspur-NF5468M5:~$ ll
 total 4
 drwxr-xr-x 3 msmcquan quansilong 4096 6月  15 10:39 quansilong/
+```
+
+新建个人文件夹后，进入个人文件夹新建工作目录。
+```bash
 msmcquan@inspur-NF5468M5:~$ cd quansilong/
 msmcquan@inspur-NF5468M5:~/quansilong$ pwd
 /home/msmcquan/quansilong
+msmcquan@inspur-NF5468M5:~/quansilong$ mkdir LiFePO4-c-010-2x1x2-vac-QE
+msmcquan@inspur-NF5468M5:~/quansilong$ ll
+total 4
+drwxr-xr-x 3 msmcquan quansilong 4096 6月  15 12:37 LiFePO4-c-010-2x1x2-vac-QE/
 ```
 
 ## 3 准备队列系统提交脚本
