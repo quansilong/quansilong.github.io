@@ -10,7 +10,7 @@ tags: [QE, DFT, AIMD]
 ## 1 登陆服务器 (如在本地计算可跳过此步)
 - 下载安装[Xshell](https://cdn.netsarang.net/v8/Xshell-latest-p)和[Xftp](https://cdn.netsarang.net/v8/Xftp-latest-p)；
 - 打开 Xshell，点击「新建」，点击「连接」填写主机地址、端口号等信息；再点击「用户身份验证」输入用户名与密码，完成后点击「确定」;
-<img width="1370" height="684" alt="image" src="https://github.com/user-attachments/assets/dc160fc3-88d5-4b9e-9d47-f49cb81cbd21" />
+![主题](/assets/image/2026-06-22/1.png)
 
 
 - 点击「打开」，选中刚刚新建的连接会话，点击「连接」登录服务器;
