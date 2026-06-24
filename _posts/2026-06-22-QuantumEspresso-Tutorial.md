@@ -38,6 +38,16 @@ msmcquan@inspur-NF5468M5:~/quansilong/LiFePO4-c-010-QE$ pwd
 /home/msmcquan/quansilong/LiFePO4-c-010-QE
 ```
 
-## 3 准备队列系统提交脚本
+## 3 准备PBS队列系统提交脚本
+`PBS（Protable Batch System）`是功能最为齐全，历史最悠久，支持最广泛的本地集群调度器之一。 PBS的目前包括openPBS，PBS Pro和Torque三个主要分支。其中OpenPBS是最早的PBS系统，目前已经没有太多后续开发，PBS pro是PBS的商业版本，功能最为丰富。`Torque`是Clustering公司接过了OpenPBS，并给与后续支持的一个开源版本。
+
+`Torque`作为一款开源免费的PBS排队管理系统，被许多使用服务器和集群的小组广泛使用。课题组服务器上已经部署好 `torque PBS`任务排队管理系统。PBS队列系统提交脚本我已写好，已上传到我的个人文件夹中。
+```bash
+msmcquan@inspur-NF5468M5:~/quansilong$ ll
+total 12
+drwxr-xr-x 2 msmcquan quansilong 4096 6月  24 09:39 LiFePO4-c-010-2x1x2-vac-QE/
+drwxr-xr-x 2 msmcquan quansilong 4096 6月  24 09:40 LiFePO4-c-010-QE/
+-rw-r--r-- 1 msmcquan quansilong  889 6月  24 15:20 <font size="4" color="red">runqe-pw.pbs</font>
+```
 
 <font size="4" color="red"><b>这是红色加粗的大号字体</b></font>
