@@ -39,9 +39,9 @@ msmcquan@inspur-NF5468M5:~/quansilong/LiFePO4-c-010-QE$ pwd
 ```
 
 ## 3 准备PBS队列系统提交脚本
-`PBS（Protable Batch System）`是功能最为齐全，历史最悠久，支持最广泛的本地集群调度器之一。 PBS的目前包括openPBS，PBS Pro和Torque三个主要分支。其中OpenPBS是最早的PBS系统，目前已经没有太多后续开发，PBS pro是PBS的商业版本，功能最为丰富。`Torque`是Clustering公司接过了OpenPBS，并给与后续支持的一个开源版本。
+`PBS（Protable Batch System）`是功能最为齐全，历史最悠久，支持最广泛的本地集群调度器之一。 PBS的目前包括OpenPBS，PBS Pro和Torque三个主要分支。其中OpenPBS是最早的PBS系统，目前已经没有太多后续开发，PBS pro是PBS的商业版本，功能最为丰富。`Torque`是Clustering公司接过了OpenPBS，并给与后续支持的一个开源版本。
 
-`Torque`作为一款开源免费的PBS排队管理系统，被许多使用服务器和集群的小组广泛使用。课题组服务器上已经部署好 `torque PBS`任务排队管理系统。PBS队列系统提交脚本 `runqe-pw.pbs`我已写好，已上传到我的个人文件夹中。
+`Torque`作为一款开源免费的PBS排队管理系统，被许多使用服务器和集群的小组广泛使用。课题组服务器上已经部署好 `Torque PBS`任务排队管理系统。PBS队列系统提交脚本 `runqe-pw.pbs`我已写好，已上传到我的个人文件夹中。
 ```bash
 msmcquan@inspur-NF5468M5:~/quansilong/LiFePO4-c-010-QE$ ll ..
 total 12
@@ -54,8 +54,42 @@ drwxr-xr-x 2 msmcquan quansilong 4096 6月  24 09:40 LiFePO4-c-010-QE/
 ```bash
 msmcquan@inspur-NF5468M5:~/quansilong/LiFePO4-c-010-QE$ cp ../runqe-pw.pbs .
 msmcquan@inspur-NF5468M5:~/quansilong/LiFePO4-c-010-QE$ ll
-total 4
+total 4.0K
 -rw-r--r-- 1 msmcquan quansilong 889 6月  24 16:10 runqe-pw.pbs
 ```
+
+## 4 Quantum ESPRESSO计算
+### 4.1 Quantum ESPRESSO介绍
+Quantum ESPRESSO是一个开源的电子结构计算和材料模拟软件，它主要是基于密度泛函理论(DFT)，平面波和赝势理论，它的功能主要包括：
+- 基态计算
+  - 能量自洽，应力，Kohn—Sham轨道
+  - 支持模守恒赝势(NCPP)和超软赝势(USPP)，缀加投影波(PAW)
+  - 包含多种交换-关联泛函：从LDA到GGA(PW91, PBE, B88-P86, BLYP)再到meta-GGA, 再到精确交换(HF)和杂化泛函(PBE0, B3LYP, HSE)
+  - 范德华修正：Grimme的D2,D3修正，XDM, 非局域范德华泛函
+  - Hubbard U(DFT+U, DFT+U+V)
+  - Berry相位极化
+  - 非线性磁矩，自旋轨道耦合
+- 结构优化，分子动力学和势能面
+	- 准牛顿BFGS预处理的几何优化(GDIIS)
+	- 阻尼动力学
+	- Car-Parrinello分子动力学
+	- 波恩-奥本海默分子动力学
+	- 轻推弹性带(NEB)方法
+- 量子输运
+	- 弹道输运
+	- 基于最大局域万尼尔函数(MLWF)的相干传输
+	- 最大局域化万尼尔函数(MLWF)和输运性质
+	- Kubo-Greenwood电导
+- 电化学和特殊边界条件…
+- 响应性质(微扰密度泛函理论)…
+- 光谱性质...
+值得一提的是，qe在电声相互作用、弛豫时间计算等方面做的非常好。截至目前，QE的最新版本7.5版本。
+
+
+### 4.2 Quantum ESPRESSO输入文件
+
+### 4.3 Quantum ESPRESSO计算流程
+
+
 
 <font size="4" color="red"><b>这是红色加粗的大号字体</b></font>
