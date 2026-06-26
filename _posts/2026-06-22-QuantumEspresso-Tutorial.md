@@ -18,6 +18,7 @@ tags: [QE, DFT, AIMD]
 - 点击工具栏Xftp图标启动Xftp文件传输工具，窗口左侧为本地文件目录，右侧为服务器文件目录。
 ![主题](/assets/image/2026-06-22/3.png)
 
+
 ## 2 新建个人文件夹和工作目录
 登陆服务器后，先新建自己的`个人文件夹`，以后所有的操作和计算在新建的个人文件夹中进行，如我以自己的姓名拼音新建个人文件夹「quansilong/」。新建个人文件夹后，进入`个人文件夹`（如「quansilong/」）. 
 ```bash
@@ -38,6 +39,7 @@ msmcquan@inspur-NF5468M5:~/quansilong/LiFePO4-c-010-QE$ pwd
 /home/msmcquan/quansilong/LiFePO4-c-010-QE
 ```
 
+
 ## 3 准备PBS队列系统提交脚本
 `PBS（Protable Batch System）`是功能最为齐全，历史最悠久，支持最广泛的本地集群调度器之一。 PBS的目前包括OpenPBS，PBS Pro和Torque三个主要分支。其中OpenPBS是最早的PBS系统，目前已经没有太多后续开发，PBS pro是PBS的商业版本，功能最为丰富。`Torque`是Clustering公司接过了OpenPBS，并给与后续支持的一个开源版本。
 
@@ -57,6 +59,7 @@ msmcquan@inspur-NF5468M5:~/quansilong/LiFePO4-c-010-QE$ ll
 total 4.0K
 -rw-r--r-- 1 msmcquan quansilong 889 6月  24 16:10 runqe-pw.pbs
 ```
+
 
 ## 4 Quantum ESPRESSO计算
 ### 4.1 Quantum ESPRESSO介绍
@@ -102,6 +105,7 @@ cppp.x                epsilon.x       hp.x              manypw.x        path_int
 cp.x                  epw.x           ibrav2cell.x      matdyn.x        phcg.x                ppacf.x     pw4gww.x        simple.x              wannier_ham.x
 d3hess.x              ev.x            initial_state.x   merge_wann.x    ph.x                  pp_disca.x  pwcond.x        spectra_correction.x  wannier_plot.x
 ```
+
 
 ### 4.2 Quantum ESPRESSO输入文件
 - `pw.x`输入文件结构如下，具体参考 `pw.x`手册（[https://www.quantum-espresso.org/Doc/INPUT_PW.html](https://www.quantum-espresso.org/Doc/INPUT_PW.html)）：
@@ -245,7 +249,9 @@ eigenstate = 1, 2, 3, ..., 10 (d-shell)
 Check Doc/Hubbard_input.pdf for more details. ]
 ```
 
-- `bands.x`输入文件结构如下，具体参考 bands.x`手册([https://www.quantum-espresso.org/Doc/INPUT_BANDS.html](https://www.quantum-espresso.org/Doc/INPUT_BANDS.html)):
+
+- `bands.x`输入文件结构如下，具体参考 `bands.x`手册([https://www.quantum-espresso.org/Doc/INPUT_BANDS.html](https://www.quantum-espresso.org/Doc/INPUT_BANDS.html)):
+
 ```bands
 Purpose of bands.x:
    Re-order bands, computes band-related properties. Currently,
@@ -278,6 +284,7 @@ Structure of the input data:
      ...
    /
 ```
+
 
 ### 4.3 Quantum ESPRESSO计算流程
 
