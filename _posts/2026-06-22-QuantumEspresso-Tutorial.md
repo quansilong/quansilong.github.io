@@ -292,7 +292,7 @@ Quantum ESPRESSO目前支持PAW (Projector-Augmented Wave) sets, Ultrasoft (US) 
 
 An excellent resource for PPs is Standard Solid State PPs ([SSSP](https://legacy.materialscloud.org/discover/sssp/table/efficiency)), a collection of the best verified PPs, maintained by THEOS and MARVEL on the [Materials Cloud](https://www.materialscloud.org/).
 
-Ready-to-use PP tables are available [here](http://pseudopotentials.quantum-espresso.org/legacy_tables). 
+Ready-to-use PP tables are available [here](https://pseudopotentials.quantum-espresso.org/legacy_tables). 
 
 ### 4.3 Quantum ESPRESSO计算流程
 
