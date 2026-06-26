@@ -245,8 +245,8 @@ eigenstate = 1, 2, 3, ..., 10 (d-shell)
 Check Doc/Hubbard_input.pdf for more details. ]
 ```
 
-- `bands.x`
-```
+- `bands.x`输入文件结构如下，具体参考 bands.x`手册([https://www.quantum-espresso.org/Doc/INPUT_BANDS.html](https://www.quantum-espresso.org/Doc/INPUT_BANDS.html)):
+```bands
 Purpose of bands.x:
    Re-order bands, computes band-related properties. Currently,
    re-ordering can be done with two different algorithms:
