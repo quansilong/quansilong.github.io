@@ -105,6 +105,7 @@ d3hess.x              ev.x            initial_state.x   merge_wann.x    ph.x    
 
 ### 4.2 Quantum ESPRESSO输入文件
 - `pw.x`输入文件结构如下，具体参考 `pw.x`手册（[https://www.quantum-espresso.org/Doc/INPUT_PW.html](https://www.quantum-espresso.org/Doc/INPUT_PW.html)）：
+
 ```
 Input data format: { } = optional, [ ] = it depends, | = or
 
