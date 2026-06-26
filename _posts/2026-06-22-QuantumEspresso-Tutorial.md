@@ -107,7 +107,8 @@ d3hess.x              ev.x            initial_state.x   merge_wann.x    ph.x    
 ```
 
 
-### 4.2 Quantum ESPRESSO输入文件
+### 4.2 Quantum ESPRESSO输入文件及赝势
+#### 4.2.1 Quantum ESPRESSO输入文件
 - `pw.x`输入文件结构如下，具体参考 `pw.x`手册（[https://www.quantum-espresso.org/Doc/INPUT_PW.html](https://www.quantum-espresso.org/Doc/INPUT_PW.html)）：
 
 ```
@@ -285,6 +286,13 @@ Structure of the input data:
    /
 ```
 
+
+#### 4.2.2 Quantum ESPRESSO赝势
+Quantum ESPRESSO目前支持PAW (Projector-Augmented Wave) sets, Ultrasoft (US) pseudopotentials (PPs) and Norm-Conserving (NC) PPs in separable (Kleinman-Bylander) form. Some calculations (e.g. meta-GGA functionals, Gamma-only phonon, third-order energy derivatives: Raman, anharmonic force constants) work only with NC PPs; CP does not yet support PAW.
+
+An excellent resource for PPs is Standard Solid State PPs ([SSSP](https://legacy.materialscloud.org/discover/sssp/table/efficiency)), a collection of the best verified PPs, maintained by THEOS and MARVEL on the [Materials Cloud](https://www.materialscloud.org/).
+
+Ready-to-use PP tables are available [here](http://pseudopotentials.quantum-espresso.org/legacy_tables). 
 
 ### 4.3 Quantum ESPRESSO计算流程
 
